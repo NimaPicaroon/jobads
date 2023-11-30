@@ -22,4 +22,4 @@ taxi = {
 Remember to restart your server after making changes to the configuration.
 ## Usage Example
 In the game, players can send an announcement using the command  `/announce` . The script will use the player's current job configuration to display an announcement with the corresponding style.
-[Creator](nima_picaroon)
+[Creator](discord.gg/nima_picaroon)
