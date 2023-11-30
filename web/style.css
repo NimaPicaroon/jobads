@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Change 'Arial' to your preferred font */
+}
+
+#anuncio-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border: 0px solid #fff; /* White border */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* White glow */
+    display: none;
+    max-width: 400px; /* Maximum container width */
+    animation: aparecer 0.5s ease-in-out; /* Entrance animation */
+}
+
+#barra-trabajo {
+    background-color: #3498db; /* Workbar color */
+    color: #fff;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: 'Arial', sans-serif; /* Change 'Arial' to your preferred font */
+}
+
+#anuncio-content {
+    display: flex;
+    align-items: center;
+}
+
+#logo-container {
+    padding: 10px;
+}
+
+#logo {
+    max-width: 50px; /* Maximum logo width */
+    max-height: 50px; /* Maximum logo height */
+}
+
+#mensaje-container {
+    padding: 10px;
+    text-align: center;
+}
+
+#mensaje {
+    color: #fff; /* Text color */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bolder font */
+    letter-spacing: 1px; /* Letter spacing */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Shadow to highlight the text */
+    margin: 0;
+}
+
+/* Exit animation */
+@keyframes desaparecer {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Entrance animation */
+@keyframes aparecer {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#anuncio-container.salida {
+    animation: desaparecer 0.5s ease-in-out; /* Exit animation */
+    display: none;
+}
